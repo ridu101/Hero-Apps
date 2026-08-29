@@ -1,0 +1,542 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn.simpleicons.org/whatsapp/25D366",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Private messaging, voice calls and video calls.",
+    "size": 86,
+    "reviews": 210000000,
+    "ratingAvg": 4.6,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4200000 },
+      { "name": "2 star", "count": 6300000 },
+      { "name": "3 star", "count": 12600000 },
+      { "name": "4 star", "count": 31500000 },
+      { "name": "5 star", "count": 155400000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn.simpleicons.org/spotify/1DB954",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Listen to millions of songs, albums and podcasts.",
+    "size": 75,
+    "reviews": 32000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 640000 },
+      { "name": "2 star", "count": 960000 },
+      { "name": "3 star", "count": 1920000 },
+      { "name": "4 star", "count": 4800000 },
+      { "name": "5 star", "count": 23680000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn.simpleicons.org/netflix/E50914",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "description": "Stream popular movies, series and documentaries.",
+    "size": 98,
+    "reviews": 14500000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 435000 },
+      { "name": "2 star", "count": 725000 },
+      { "name": "3 star", "count": 1450000 },
+      { "name": "4 star", "count": 2900000 },
+      { "name": "5 star", "count": 8990000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn.simpleicons.org/instagram/E4405F",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Share photos, reels, stories and messages.",
+    "size": 92,
+    "reviews": 160000000,
+    "ratingAvg": 4.4,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4800000 },
+      { "name": "2 star", "count": 8000000 },
+      { "name": "3 star", "count": 16000000 },
+      { "name": "4 star", "count": 32000000 },
+      { "name": "5 star", "count": 99200000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn.simpleicons.org/tiktok/000000",
+    "title": "TikTok",
+    "companyName": "TikTok Pte. Ltd.",
+    "description": "Discover and create entertaining short videos.",
+    "size": 120,
+    "reviews": 65000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1300000 },
+      { "name": "2 star", "count": 1950000 },
+      { "name": "3 star", "count": 3900000 },
+      { "name": "4 star", "count": 9750000 },
+      { "name": "5 star", "count": 48100000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn.simpleicons.org/youtube/FF0000",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "description": "Watch, upload and share videos from around the world.",
+    "size": 110,
+    "reviews": 155000000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 3100000 },
+      { "name": "2 star", "count": 4650000 },
+      { "name": "3 star", "count": 9300000 },
+      { "name": "4 star", "count": 23250000 },
+      { "name": "5 star", "count": 114700000 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn.simpleicons.org/facebook/0866FF",
+    "title": "Facebook",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Connect with friends, communities and businesses.",
+    "size": 115,
+    "reviews": 145000000,
+    "ratingAvg": 4.3,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 4350000 },
+      { "name": "2 star", "count": 7250000 },
+      { "name": "3 star", "count": 14500000 },
+      { "name": "4 star", "count": 29000000 },
+      { "name": "5 star", "count": 89900000 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn.simpleicons.org/messenger/00B2FF",
+    "title": "Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "description": "Chat, call and connect with your Facebook friends.",
+    "size": 72,
+    "reviews": 95000000,
+    "ratingAvg": 4.2,
+    "downloads": 5000000000,
+    "ratings": [
+      { "name": "1 star", "count": 2850000 },
+      { "name": "2 star", "count": 4750000 },
+      { "name": "3 star", "count": 9500000 },
+      { "name": "4 star", "count": 19000000 },
+      { "name": "5 star", "count": 58900000 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn.simpleicons.org/telegram/26A5E4",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "description": "Fast and secure cloud-based instant messaging.",
+    "size": 68,
+    "reviews": 16000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 320000 },
+      { "name": "2 star", "count": 480000 },
+      { "name": "3 star", "count": 960000 },
+      { "name": "4 star", "count": 2400000 },
+      { "name": "5 star", "count": 11840000 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn.simpleicons.org/discord/5865F2",
+    "title": "Discord",
+    "companyName": "Discord Inc.",
+    "description": "Talk, play and hang out with communities and friends.",
+    "size": 105,
+    "reviews": 6000000,
+    "ratingAvg": 4.4,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 300000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 3720000 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn.simpleicons.org/zoom/2D8CFF",
+    "title": "Zoom",
+    "companyName": "Zoom Communications, Inc.",
+    "description": "Video meetings, team chat and collaboration tools.",
+    "size": 95,
+    "reviews": 4300000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 129000 },
+      { "name": "2 star", "count": 215000 },
+      { "name": "3 star", "count": 430000 },
+      { "name": "4 star", "count": 860000 },
+      { "name": "5 star", "count": 2666000 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://api.iconify.design/logos/slack-icon.svg?width=256&height=256",
+    "title": "Slack",
+    "companyName": "Slack Technologies, LLC",
+    "description": "Team communication and workplace collaboration.",
+    "size": 88,
+    "reviews": 1300000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 39000 },
+      { "name": "2 star", "count": 65000 },
+      { "name": "3 star", "count": 130000 },
+      { "name": "4 star", "count": 260000 },
+      { "name": "5 star", "count": 806000 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://cdn.simpleicons.org/notion/000000",
+    "title": "Notion",
+    "companyName": "Notion Labs, Inc.",
+    "description": "Write notes, manage projects and organize your work.",
+    "size": 74,
+    "reviews": 950000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 9500 },
+      { "name": "2 star", "count": 14250 },
+      { "name": "3 star", "count": 33250 },
+      { "name": "4 star", "count": 114000 },
+      { "name": "5 star", "count": 779000 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://cdn.simpleicons.org/trello/0052CC",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "description": "Organize tasks and projects using visual boards.",
+    "size": 52,
+    "reviews": 1800000,
+    "ratingAvg": 4.4,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 54000 },
+      { "name": "2 star", "count": 90000 },
+      { "name": "3 star", "count": 180000 },
+      { "name": "4 star", "count": 360000 },
+      { "name": "5 star", "count": 1116000 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://cdn.simpleicons.org/duolingo/58CC02",
+    "title": "Duolingo",
+    "companyName": "Duolingo",
+    "description": "Learn languages through short and interactive lessons.",
+    "size": 78,
+    "reviews": 24000000,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 240000 },
+      { "name": "2 star", "count": 360000 },
+      { "name": "3 star", "count": 840000 },
+      { "name": "4 star", "count": 2880000 },
+      { "name": "5 star", "count": 19680000 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://play-lh.googleusercontent.com/Vz2scDEcbSvWxgPV7IcmD0ECtvvuFluOYMaJf0h7O2nwAbmB4hyh7lJj9xPFZlsUZLottcE5dwqNQKxzr-mY5w=s512",
+    "title": "Canva",
+    "companyName": "Canva",
+    "description": "Create social posts, presentations, videos and designs.",
+    "size": 70,
+    "reviews": 18000000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 270000 },
+      { "name": "3 star", "count": 630000 },
+      { "name": "4 star", "count": 2160000 },
+      { "name": "5 star", "count": 14760000 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://cdn.simpleicons.org/dropbox/0061FF",
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "description": "Store, sync and share files securely in the cloud.",
+    "size": 82,
+    "reviews": 2300000,
+    "ratingAvg": 4.4,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 69000 },
+      { "name": "2 star", "count": 115000 },
+      { "name": "3 star", "count": 230000 },
+      { "name": "4 star", "count": 460000 },
+      { "name": "5 star", "count": 1426000 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://cdn.simpleicons.org/googledrive/4285F4",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "description": "Store, share and collaborate on files from anywhere.",
+    "size": 58,
+    "reviews": 10000000,
+    "ratingAvg": 4.4,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 500000 },
+      { "name": "3 star", "count": 1000000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 6200000 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://cdn.simpleicons.org/googlemaps/4285F4",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "description": "Navigate, explore places and discover local businesses.",
+    "size": 112,
+    "reviews": 18000000,
+    "ratingAvg": 4.3,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 540000 },
+      { "name": "2 star", "count": 900000 },
+      { "name": "3 star", "count": 1800000 },
+      { "name": "4 star", "count": 3600000 },
+      { "name": "5 star", "count": 11160000 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://cdn.simpleicons.org/gmail/EA4335",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "description": "Secure email with smart organization and collaboration.",
+    "size": 65,
+    "reviews": 13000000,
+    "ratingAvg": 4.4,
+    "downloads": 10000000000,
+    "ratings": [
+      { "name": "1 star", "count": 390000 },
+      { "name": "2 star", "count": 650000 },
+      { "name": "3 star", "count": 1300000 },
+      { "name": "4 star", "count": 2600000 },
+      { "name": "5 star", "count": 8060000 }
+    ]
+  },
+  {
+    "id": 21,
+    "image": "https://cdn.simpleicons.org/uber/000000",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "description": "Request rides and travel safely around your city.",
+    "size": 96,
+    "reviews": 15000000,
+    "ratingAvg": 4.6,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 450000 },
+      { "name": "3 star", "count": 900000 },
+      { "name": "4 star", "count": 2250000 },
+      { "name": "5 star", "count": 11100000 }
+    ]
+  },
+  {
+    "id": 22,
+    "image": "https://cdn.simpleicons.org/airbnb/FF5A5F",
+    "title": "Airbnb",
+    "companyName": "Airbnb, Inc.",
+    "description": "Find unique stays, homes and travel experiences.",
+    "size": 90,
+    "reviews": 1700000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 34000 },
+      { "name": "2 star", "count": 51000 },
+      { "name": "3 star", "count": 102000 },
+      { "name": "4 star", "count": 255000 },
+      { "name": "5 star", "count": 1258000 }
+    ]
+  },
+  {
+    "id": 23,
+    "image": "https://play-lh.googleusercontent.com/UIYZ9hTFNg-zZUg_uzLS9YdyDpvoo1VHNFb6VlzHy5JqNMq9Uq-p2S1VPwzXCipHTFacfGKhJkyAuKL19VVlcWA=s512",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon Mobile LLC",
+    "description": "Shop millions of products and track your orders.",
+    "size": 102,
+    "reviews": 38000000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 760000 },
+      { "name": "2 star", "count": 1140000 },
+      { "name": "3 star", "count": 2280000 },
+      { "name": "4 star", "count": 5700000 },
+      { "name": "5 star", "count": 28120000 }
+    ]
+  },
+  {
+    "id": 24,
+    "image": "https://cdn.simpleicons.org/ebay/E53238",
+    "title": "eBay",
+    "companyName": "eBay Mobile",
+    "description": "Buy, sell and discover products from global sellers.",
+    "size": 84,
+    "reviews": 4700000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 94000 },
+      { "name": "2 star", "count": 141000 },
+      { "name": "3 star", "count": 282000 },
+      { "name": "4 star", "count": 705000 },
+      { "name": "5 star", "count": 3478000 }
+    ]
+  },
+  {
+    "id": 25,
+    "image": "https://cdn.simpleicons.org/pinterest/BD081C",
+    "title": "Pinterest",
+    "companyName": "Pinterest",
+    "description": "Discover ideas and inspiration for your next project.",
+    "size": 76,
+    "reviews": 11000000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 220000 },
+      { "name": "2 star", "count": 330000 },
+      { "name": "3 star", "count": 660000 },
+      { "name": "4 star", "count": 1650000 },
+      { "name": "5 star", "count": 8140000 }
+    ]
+  },
+  {
+    "id": 26,
+    "image": "https://cdn.simpleicons.org/reddit/FF4500",
+    "title": "Reddit",
+    "companyName": "Reddit, Inc.",
+    "description": "Explore communities, discussions, news and interests.",
+    "size": 99,
+    "reviews": 3500000,
+    "ratingAvg": 4.3,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 105000 },
+      { "name": "2 star", "count": 175000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 700000 },
+      { "name": "5 star", "count": 2170000 }
+    ]
+  },
+  {
+    "id": 27,
+    "image": "https://cdn.simpleicons.org/snapchat/FFFC00",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "description": "Share photos, videos and moments with friends.",
+    "size": 108,
+    "reviews": 36000000,
+    "ratingAvg": 4.3,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 1080000 },
+      { "name": "2 star", "count": 1800000 },
+      { "name": "3 star", "count": 3600000 },
+      { "name": "4 star", "count": 7200000 },
+      { "name": "5 star", "count": 22320000 }
+    ]
+  },
+  {
+    "id": 28,
+    "image": "https://cdn.simpleicons.org/shazam/0088FF",
+    "title": "Shazam",
+    "companyName": "Apple Inc.",
+    "description": "Identify songs playing around you within seconds.",
+    "size": 48,
+    "reviews": 9400000,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 94000 },
+      { "name": "2 star", "count": 141000 },
+      { "name": "3 star", "count": 329000 },
+      { "name": "4 star", "count": 1128000 },
+      { "name": "5 star", "count": 7708000 }
+    ]
+  },
+  {
+    "id": 29,
+    "image": "https://cdn.simpleicons.org/headspace/F47D31",
+    "title": "Headspace",
+    "companyName": "Headspace",
+    "description": "Meditation, mindfulness, sleep and mental wellness.",
+    "size": 63,
+    "reviews": 320000,
+    "ratingAvg": 4.5,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 6400 },
+      { "name": "2 star", "count": 9600 },
+      { "name": "3 star", "count": 19200 },
+      { "name": "4 star", "count": 48000 },
+      { "name": "5 star", "count": 236800 }
+    ]
+  },
+  {
+    "id": 30,
+    "image": "https://cdn.simpleicons.org/strava/FC4C02",
+    "title": "Strava",
+    "companyName": "Strava, Inc.",
+    "description": "Track running, cycling and other fitness activities.",
+    "size": 87,
+    "reviews": 920000,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 18400 },
+      { "name": "2 star", "count": 27600 },
+      { "name": "3 star", "count": 55200 },
+      { "name": "4 star", "count": 138000 },
+      { "name": "5 star", "count": 680800 }
+    ]
+  }
+]
