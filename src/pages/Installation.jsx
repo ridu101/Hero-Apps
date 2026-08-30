@@ -1,11 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router";
 
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+import heroLogo from "../assets/logo.png";
+
+const MySwal = withReactContent(Swal);
+
 const formatNumber = (number) => {
   return new Intl.NumberFormat("en", {
     notation: "compact",
     maximumFractionDigits: 1,
-  }).format(number);
+  }).format(Number(number));
 };
 
 const Installation = () => {
@@ -16,33 +23,75 @@ const Installation = () => {
     );
   });
 
+  // Sorting value
   const [sortBy, setSortBy] = useState("default");
 
-  // App uninstall করা
-  const handleUninstall = (id) => {
+  // Uninstall button-এর কাজ
+  const handleUninstall = async (selectedApp) => {
+    // Uninstalling alert
+    await MySwal.fire({
+      html: (
+        <div className="py-4">
+          <div className="flex items-center justify-center text-3xl font-bold text-[#102A43]">
+            <span>Uninst</span>
+
+            <img
+              src={heroLogo}
+              alt="Uninstalling"
+              className="mx-1 h-10 w-10 animate-spin"
+            />
+
+            <span>lling</span>
+          </div>
+
+          <p className="mt-4 text-[#627382]">
+            Please wait while {selectedApp.title} is being uninstalled.
+          </p>
+        </div>
+      ),
+
+      showConfirmButton: false,
+      allowOutsideClick: false,
+      allowEscapeKey: false,
+      timer: 1500,
+      timerProgressBar: true,
+    });
+
+    // Selected app বাদ দেওয়া
     const remainingApps = installedApps.filter(
-      (app) => app.id !== id
+      (app) => app.id !== selectedApp.id
     );
 
+    // State update করা
     setInstalledApps(remainingApps);
 
+    // LocalStorage update করা
     localStorage.setItem(
       "installedApps",
       JSON.stringify(remainingApps)
     );
+
+    // Success alert
+    await MySwal.fire({
+      title: "Uninstalled!",
+      text: `${selectedApp.title} has been uninstalled successfully.`,
+      icon: "success",
+      confirmButtonText: "Done",
+      confirmButtonColor: "#632EE3",
+    });
   };
 
-  // Original array ঠিক রেখে copy তৈরি করা
+  // Original array ঠিক রাখার জন্য copy
   const sortedApps = [...installedApps];
 
-  // বেশি download থেকে কম download
+  // সবচেয়ে বেশি download আগে
   if (sortBy === "high-low") {
     sortedApps.sort((firstApp, secondApp) => {
       return secondApp.downloads - firstApp.downloads;
     });
   }
 
-  // কম download থেকে বেশি download
+  // সবচেয়ে কম download আগে
   if (sortBy === "low-high") {
     sortedApps.sort((firstApp, secondApp) => {
       return firstApp.downloads - secondApp.downloads;
@@ -131,7 +180,7 @@ const Installation = () => {
 
                 {/* Uninstall button */}
                 <button
-                  onClick={() => handleUninstall(app.id)}
+                  onClick={() => handleUninstall(app)}
                   className="btn btn-sm border-none bg-green-500 text-white"
                 >
                   Uninstall
@@ -140,7 +189,7 @@ const Installation = () => {
             ))}
           </div>
         ) : (
-          /* কোনো installed app না থাকলে */
+          /* কোনো app installed না থাকলে */
           <div className="mt-16 text-center">
             <h2 className="text-2xl font-bold text-[#102A43]">
               No Installed Apps

@@ -9,10 +9,12 @@ import {
 } from "recharts";
 
 const RatingsChart = ({ ratings = [] }) => {
+  // 5 star থেকে 1 star পর্যন্ত সাজানো
   const chartData = Array.isArray(ratings)
     ? [...ratings].reverse()
     : [];
 
+  // বড় number-কে 10K, 2M এভাবে দেখানো
   const formatNumber = (number) => {
     return new Intl.NumberFormat("en", {
       notation: "compact",
@@ -20,6 +22,7 @@ const RatingsChart = ({ ratings = [] }) => {
     }).format(Number(number));
   };
 
+  // Rating data না থাকলে
   if (chartData.length === 0) {
     return (
       <p className="mt-6 text-[#627382]">

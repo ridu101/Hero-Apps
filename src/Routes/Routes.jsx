@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router";
+
 import Root from "../pages/Root";
 import Home from "../pages/Home";
-import AllApps from "../pages/AllAppsPage";
+import AllAppsPage from "../pages/AllAppsPage";
 import AppDetails from "../pages/AppDetails";
 import Installation from "../pages/Installation";
 
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
       {
         path: "apps",
         loader: () => fetch("/appData.json"),
-        Component: AllApps,
+        Component: AllAppsPage,
       },
       {
         path: "apps/:id",
@@ -28,6 +29,15 @@ export const router = createBrowserRouter([
       },
       {
         path: "installation",
+
+        loader: () => {
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve(null);
+            }, 500);
+          });
+        },
+
         Component: Installation,
       }
     ],
