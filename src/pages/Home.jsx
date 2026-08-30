@@ -7,8 +7,6 @@ import Apps from "./Apps";
 
 const Home = () => {
     const appData= useLoaderData();
-    console.log(appData)
-
     return (
         <div>
          <Banner></Banner>
