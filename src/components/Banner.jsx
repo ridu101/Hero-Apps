@@ -6,8 +6,8 @@ const Banner = () => {
   return (
     <div className="mt-8 md:mt-10">
       {/* Banner text */}
-      <div className="px-4">
-        <h1 className="text-center text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+      <div className="px-4 mt-10">
+        <h1 className="text-center text-4xl font-bold leading-tight sm:text-5xl md:text-6xl ">
           We Build
           <br />
           <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
@@ -56,8 +56,8 @@ const Banner = () => {
       </div>
 
       {/* Statistics section */}
-      <div className="relative left-1/2 w-screen -translate-x-1/2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] px-5 py-10 text-center text-white sm:px-10 md:py-12">
-        <h2 className="text-3xl font-bold sm:text-4xl">
+      <div className="relative left-1/2 w-screen -translate-x-1/2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] px-5 py-10 text-center text-white sm:px-10 md:py-12 rounded-3xl">
+        <h2 className="text-3xl font-bold sm:text-4xl ">
           Trusted by Millions, Built for You
         </h2>
 
