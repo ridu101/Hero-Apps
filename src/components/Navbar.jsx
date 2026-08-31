@@ -6,9 +6,7 @@ const Navbar = () => {
   return (
     <div className="fixed left-0 top-0 z-50 w-full bg-base-100 shadow-sm">
       <div className="navbar mx-auto max-w-300 px-4">
-        {/* Navbar start */}
         <div className="navbar-start">
-          {/* Mobile menu */}
           <div className="dropdown">
             <div
               tabIndex={0}
@@ -30,8 +28,6 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-
-            {/* Mobile dropdown links */}
             <ul
               tabIndex={-1}
               className="menu menu-sm dropdown-content z-50 mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
@@ -62,7 +58,6 @@ const Navbar = () => {
                   App
                 </NavLink>
               </li>
-
               <li>
                 <NavLink
                   to="/installation"
@@ -77,8 +72,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-
-          {/* Logo */}
           <Link
             to="/"
             className="btn border-none bg-transparent px-2"
@@ -88,14 +81,11 @@ const Navbar = () => {
               src={heroLogo}
               alt="Hero Apps"
             />
-
             <span className="hidden bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-xl font-bold text-transparent sm:block">
               Hero Apps
             </span>
           </Link>
         </div>
-
-        {/* Desktop menu */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-8 px-1">
             <li>
@@ -124,7 +114,6 @@ const Navbar = () => {
                 App
               </NavLink>
             </li>
-
             <li>
               <NavLink
                 to="/installation"
@@ -139,8 +128,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
-        {/* Navbar end */}
         <div className="navbar-end">
           <a
             href="https://github.com/ridu101"
@@ -149,7 +136,6 @@ const Navbar = () => {
             className="btn border-none bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white"
           >
             <FaGithub className="text-lg text-white" />
-
             <span className="hidden sm:block">
               Contribute
             </span>
@@ -159,5 +145,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

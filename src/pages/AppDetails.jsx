@@ -29,20 +29,14 @@ const formatNumber = (number) => {
 };
 
 const AppDetails = () => {
-  // JSON থেকে সব app নেওয়া
+ 
   const appData = useLoaderData();
-
-  // URL থেকে app ID নেওয়া
   const { id } = useParams();
-
-  // ID অনুযায়ী নির্দিষ্ট app খুঁজে বের করা
   const app = Array.isArray(appData)
     ? appData.find(
         (singleApp) => singleApp.id === Number(id)
       )
     : null;
-
-  // App আগে থেকে installed কি না দেখা
   const [isInstalled, setIsInstalled] = useState(() => {
     const savedApps =
       JSON.parse(localStorage.getItem("installedApps")) || [];
@@ -51,14 +45,10 @@ const AppDetails = () => {
       (savedApp) => savedApp.id === Number(id)
     );
   });
-
-  // Install button-এর কাজ
   const handleInstall = async () => {
     if (!app || isInstalled) {
       return;
     }
-
-    // Installing alert
     await MySwal.fire({
       html: (
         <div className="py-4">
@@ -87,16 +77,15 @@ const AppDetails = () => {
       timerProgressBar: true,
     });
 
-    // LocalStorage থেকে আগের installed apps নেওয়া
     const savedApps =
       JSON.parse(localStorage.getItem("installedApps")) || [];
 
-    // একই app আগে থেকে আছে কি না দেখা
+ 
     const alreadyInstalled = savedApps.some(
       (savedApp) => savedApp.id === app.id
     );
 
-    // App আগে থেকে না থাকলে save করা
+  
     if (!alreadyInstalled) {
       const updatedApps = [...savedApps, app];
 
@@ -105,8 +94,6 @@ const AppDetails = () => {
         JSON.stringify(updatedApps)
       );
     }
-
-    // Button-এর লেখা Installed এবং disabled করা
     setIsInstalled(true);
 
     // Success alert
@@ -118,11 +105,10 @@ const AppDetails = () => {
       confirmButtonColor: "#632EE3",
     });
   };
-
-  // App পাওয়া না গেলে
   if (!app) {
     return (
       <section className="flex min-h-[70vh] items-center justify-center bg-[#F6F6F6] px-5 py-16">
+      
         <div className="text-center">
           <img
             className="mx-auto w-full max-w-xs object-contain sm:max-w-sm"
@@ -149,8 +135,6 @@ const AppDetails = () => {
       </section>
     );
   }
-
-  // নির্দিষ্ট app-এর data
   const {
     image,
     title,
@@ -165,10 +149,9 @@ const AppDetails = () => {
 
   return (
     <section className="min-h-screen bg-[#F6F6F6] px-5 py-12">
+      <title>{title}</title>
       <div className="mx-auto max-w-7xl">
-        {/* App information */}
         <div className="flex flex-col gap-8 md:flex-row">
-          {/* App image */}
           <div className="flex justify-center">
             <div className="h-64 w-full rounded-lg bg-white p-6 shadow-sm sm:w-64">
               <img
@@ -178,28 +161,20 @@ const AppDetails = () => {
               />
             </div>
           </div>
-
-          {/* App details */}
           <div className="flex-1">
             <h1 className="text-3xl font-bold text-[#102A43]">
               {title}
             </h1>
-
             <p className="mt-2 text-sm text-[#627382]">
               Developed by{" "}
               <span className="font-medium text-[#632EE3]">
                 {companyName}
               </span>
             </p>
-
             <div className="my-6 border-t border-gray-300"></div>
-
-            {/* App statistics */}
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
-              {/* Downloads */}
               <div>
                 <FaDownload className="text-2xl text-green-500" />
-
                 <p className="mt-2 text-sm text-[#627382]">
                   Downloads
                 </p>
@@ -208,8 +183,6 @@ const AppDetails = () => {
                   {formatNumber(downloads)}
                 </h2>
               </div>
-
-              {/* Rating */}
               <div>
                 <FaStar className="text-2xl text-orange-500" />
 
@@ -221,8 +194,6 @@ const AppDetails = () => {
                   {ratingAvg}
                 </h2>
               </div>
-
-              {/* Reviews */}
               <div>
                 <FaCommentDots className="text-2xl text-purple-500" />
 
@@ -235,8 +206,6 @@ const AppDetails = () => {
                 </h2>
               </div>
             </div>
-
-            {/* Install button */}
             <button
               onClick={handleInstall}
               disabled={isInstalled}
@@ -248,8 +217,6 @@ const AppDetails = () => {
             </button>
           </div>
         </div>
-
-        {/* Ratings chart */}
         <div className="mt-10 border-t border-gray-300 pt-8">
           <h2 className="text-xl font-bold text-[#102A43]">
             Ratings
@@ -257,13 +224,10 @@ const AppDetails = () => {
 
           <RatingsChart ratings={ratings} />
         </div>
-
-        {/* Description */}
         <div className="mt-10 border-t border-gray-300 pt-8">
           <h2 className="text-xl font-bold text-[#102A43]">
             Description
           </h2>
-
           <p className="mt-5 leading-7 text-[#627382]">
             {description}
           </p>
@@ -272,5 +236,4 @@ const AppDetails = () => {
     </section>
   );
 };
-
 export default AppDetails;

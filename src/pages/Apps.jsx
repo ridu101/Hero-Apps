@@ -18,8 +18,6 @@ const Apps = ({ appData = [] }) => {
             Explore all trending apps on the market developed by us
           </p>
         </div>
-
-       
         <div className="mt-10 grid grid-cols-1 gap-5 text-left sm:grid-cols-2 lg:grid-cols-4">
           {appData.slice(0, 8).map((singleApp) => (
             <SingleApp
@@ -28,8 +26,6 @@ const Apps = ({ appData = [] }) => {
             />
           ))}
         </div>
-
-
         <div className="mt-10 text-center">
           <Link
             to="/apps"
@@ -42,5 +38,4 @@ const Apps = ({ appData = [] }) => {
     </section>
   );
 };
-
 export default Apps;

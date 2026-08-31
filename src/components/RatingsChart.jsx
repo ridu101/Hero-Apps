@@ -1,28 +1,15 @@
-import {
-  BarChart,
-  Bar,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import {BarChart,Bar,XAxis,YAxis,CartesianGrid,Tooltip,ResponsiveContainer,} from "recharts";
 
 const RatingsChart = ({ ratings = [] }) => {
-  // 5 star থেকে 1 star পর্যন্ত সাজানো
   const chartData = Array.isArray(ratings)
     ? [...ratings].reverse()
     : [];
-
-  // বড় number-কে 10K, 2M এভাবে দেখানো
   const formatNumber = (number) => {
     return new Intl.NumberFormat("en", {
       notation: "compact",
       maximumFractionDigits: 1,
     }).format(Number(number));
   };
-
-  // Rating data না থাকলে
   if (chartData.length === 0) {
     return (
       <p className="mt-6 text-[#627382]">
@@ -30,7 +17,6 @@ const RatingsChart = ({ ratings = [] }) => {
       </p>
     );
   }
-
   return (
     <div className="mt-6 h-80 w-full sm:h-96">
       <ResponsiveContainer width="100%" height="100%">
@@ -60,7 +46,6 @@ const RatingsChart = ({ ratings = [] }) => {
               fontSize: 12,
             }}
           />
-
           <YAxis
             type="category"
             dataKey="name"
@@ -72,7 +57,6 @@ const RatingsChart = ({ ratings = [] }) => {
               fontSize: 12,
             }}
           />
-
           <Tooltip
             formatter={(value) => [
               formatNumber(value),
@@ -86,7 +70,6 @@ const RatingsChart = ({ ratings = [] }) => {
               border: "1px solid #E5E7EB",
             }}
           />
-
           <Bar
             dataKey="count"
             fill="#F97316"
@@ -98,5 +81,4 @@ const RatingsChart = ({ ratings = [] }) => {
     </div>
   );
 };
-
 export default RatingsChart;

@@ -9,10 +9,9 @@ const Home = () => {
     const appData= useLoaderData();
     return (
         <div>
+            <title>Home </title>
          <Banner></Banner>
          <Apps appData={appData}></Apps>
-
-          
         </div>
     );
 };

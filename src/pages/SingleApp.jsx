@@ -1,8 +1,6 @@
 import { Link } from "react-router";
-
 const SingleApp = ({ singleApp }) => {
   const { id, image, title, ratingAvg, downloads } = singleApp;
-
   return (
     <Link to={`/apps/${id}`} className="block">
       <div className="rounded-lg bg-white p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -11,16 +9,13 @@ const SingleApp = ({ singleApp }) => {
           src={image}
           alt={title}
         />
-
         <h3 className="mt-3 text-lg font-semibold text-[#102A43]">
           {title}
         </h3>
-
         <div className="mt-3 flex items-center justify-between">
           <p className="rounded bg-green-50 px-3 py-1 text-sm font-medium text-green-500">
             ↓ {downloads}
           </p>
-
           <p className="rounded bg-orange-50 px-3 py-1 text-sm font-medium text-orange-500">
             ★ {ratingAvg}
           </p>
@@ -29,5 +24,4 @@ const SingleApp = ({ singleApp }) => {
     </Link>
   );
 };
-
 export default SingleApp;
